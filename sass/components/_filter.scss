@@ -1,0 +1,51 @@
+// блок филтры 
+.filter {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  
+  .filter__wrapper {
+    margin-left: 8px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  
+  .filter__btn {
+    background: var(--background-btn-filter);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    color: var(--title-color);
+    cursor: pointer;
+  
+    border: none;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    // переход 
+    transition: color var(--animation), background var(--animation),
+      box-shadow var(--animation);
+      &:hover {
+    background: var(--accent-color);
+    color: var(--header-hero-color);
+    // shadow-middle 
+    box-shadow: var(--box-shadow-btn);
+    border-radius: 4px;
+  }
+  &:focus {
+    background: var(--accent-color);
+    color: var(--header-hero-color);
+    // shadow-middle 
+    box-shadow: var(--box-shadow-btn);
+    border-radius: 4px;
+  }
+  }
+  
+  // блок филтры 

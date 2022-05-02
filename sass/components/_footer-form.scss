@@ -1,0 +1,31 @@
+// форматирование формы подписки футер начало 
+.footer__user {
+    margin-left: 93px;
+  }
+  
+  .footer__form {
+    display: flex;
+    height: 50px;
+  
+    font-size: 16px;
+    line-height: 20px;
+    & input::placeholder {
+      padding-left: 16px;
+    }
+    & button:hover {
+      background-color: var(--accent-color-hover);
+    }
+    & button:focus {
+    background-color: var(--accent-color-hover);
+  }
+  }
+    
+  .footer__input {
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  
+    color: var(--header-hero-color);
+    background-color: var(--background-hero-footer);
+  }

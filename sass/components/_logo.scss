@@ -1,0 +1,20 @@
+// блок logo 
+.logo {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  
+    margin-right: 93px;
+  }
+  
+  .logo__secondary {
+    color: var(--header-hero-color);
+  }
+  
+  .logo__primary {
+    color: var(--title-color);
+  }
+  
