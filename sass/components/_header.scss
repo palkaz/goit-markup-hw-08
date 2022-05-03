@@ -1,21 +1,38 @@
 // блок хедер 
+// header_menu {
 
-// .header__container {
-//     display: flex;
-//     align-items: center;
-//   }
-// // размеры шрифта навигация контакты 
-// .header {
-//     font-weight: 500;
-//     letter-spacing: 0.02em;
+// }
+.header__container {
+    display: flex;
+    align-items: center;
+  }
+// размеры шрифта навигация контакты 
+.header {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    // padding-top: 16px;
+    // padding-bottom: 16px;
   
-//     border-bottom: 1px solid var(--header-line-color);
-//   }
-  // .header__link.logo {
-  //   // увеличение кликкабельной области 
-  //   padding-top: 24px;
-  //   padding-bottom: 25px;
-  // }
+
+    @media (max-width: 767px) {
+      nav {
+        display: none;
+      }
+  
+      &__list {
+        display: none;
+      }
+// полоска в хедере
+    // border-bottom: 1px solid var(--header-line-color);
+  }
+}
+  .header__link.logo {
+    // увеличение кликкабельной области 
+    padding-top: 16px;
+    padding-bottom: 16px;
+    // padding-top: 24px;
+    // padding-bottom: 25px;
+  }
   // .header__list {
   //   margin-left: auto;
   // }

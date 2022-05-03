@@ -102,12 +102,6 @@ img {
   overflow: hidden;
 }
 
-.header {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  border-bottom: 1px solid var(--header-line-color);
-}
-
 @media screen and (min-width: 768px) {
   .effect {
     position: relative;
@@ -336,8 +330,8 @@ textarea {
   text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
 }
 
 .logo__secondary {
@@ -346,5 +340,29 @@ textarea {
 
 .logo__primary {
   color: var(--title-color);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 767px) {
+  .header nav {
+    display: none;
+  }
+  .header__list {
+    display: none;
+  }
+}
+
+.header__link.logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 /*# sourceMappingURL=main.css.map */
