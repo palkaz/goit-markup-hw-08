@@ -1,0 +1,45 @@
+// секция карточки 
+.userpic {
+    background-color: var(--background-btn-filter);
+  
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .userpic__line {
+    display: flex;
+  }
+  
+  .userpic__wrapper{
+    &:first-child {
+    margin: 0;
+  }
+}
+  .userpic__wrapper {
+    margin-left: 30px;
+    background-color: var(--header-hero-color);
+  
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  .userpic__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--title-color);
+  
+    text-align: center;
+  }
+  
+  .userpic__cards {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .userpic__txt {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  // секция карточки 

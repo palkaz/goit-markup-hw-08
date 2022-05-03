@@ -1,0 +1,98 @@
+// секция примеры 
+.exemple__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.exemple__cards {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.exemple__shadows {
+  &:hover {
+    display: block;
+    box-shadow: var(--box-shadow-cards);
+   }
+  &:focus {
+   display: block;
+   box-shadow: var(--box-shadow-cards);
+   }
+  // переход 
+  transition: box-shadow var(--animation);
+}
+
+
+.exemple__cards{
+  &:nth-child(3n) {
+  margin-right: 0;
+  }
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+// test overlay 
+.exemple__box {
+  position: relative;
+  /* обрезка за карочкой */
+  overflow: hidden;
+ &::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  transform: translateY(101%);
+  background: var(--color-background-overlay);
+  /* анимация */
+  transition: var(--animation);
+}
+}
+/* анимация при ховере */
+.exemple__cards:hover .exemple__box::before,
+.exemple__cards:hover .exemple__meta {
+  transform: translateY(0%);
+}
+
+.exemple__meta {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  transform: translateY(101%);
+  color: var(--header-hero-color);
+  // анимация 
+  transition: var(--animation);
+}
+
+// позиционирование текста 
+.exemple__overlay {
+  width: 322px;
+  height: 168px;
+  margin-top: 63px;
+  margin-left: 24px;
+  font-size: 18px;
+  // test 
+  // border: 1px solid #f44336; 
+}
+
+.exemple__text {
+  padding: 20px 24px;
+  border-left: 1px solid var(--header-line-color);
+  border-bottom: 1px solid var(--header-line-color);
+  border-right: 1px solid var(--header-line-color);
+}
+
+.exemple__title {
+  font-weight: 700;
+
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+
+// конец блок примеры работ 
+// конец секция примеры 

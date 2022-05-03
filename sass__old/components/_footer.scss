@@ -1,0 +1,37 @@
+.footer {
+    background-color: var(--background-hero-footer);
+    color: var(--header-hero-color);
+  
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .footer__adress {
+    font-style: normal;
+    margin-bottom: 9px;
+  }
+  
+  .footer__link {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  
+  .footer__title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--header-hero-color);
+  
+    margin-bottom: 20px;
+  }
+  
+  .footer__list.container {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .footer__socials {
+    margin-left: 70px;
+  }
+  
