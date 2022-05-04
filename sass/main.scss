@@ -1,22 +1,21 @@
+@import "./variables/variables";
 
-@import"./variables/variables";
+@import "./base/base";
 
-@import"./base/base";
-
-@import"./utils/utils";
+@import "./utils/utils";
 // // @import"./utils/utils";
 // // @import"./utils/utils";
-
 
 // // @import"./components/";
-@import"./components/container";
-// @import"./components/btn";
-@import"./components/backdrop";
-// @import"./components/hero";
-@import"./components/logo";
-@import"./components/header";
-@import"./components/nav";
-@import"./components/contact";
+@import "./components/container";
+@import "./components/btn";
+@import "./components/backdrop";
+@import "./components/hero";
+@import "./components/logo";
+@import "./components/header";
+@import "./components/nav";
+@import "./components/nav-menu";
+@import "./components/contact";
 // @import"./components/benefits";
 // @import"./components/exemple";
 // @import"./components/userpic";
@@ -29,4 +28,3 @@
 // @import"./components/filter";
 // @import"./components/portfolio";
 // // @import"./components/";
-
