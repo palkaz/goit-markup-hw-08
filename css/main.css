@@ -535,4 +535,8 @@ textarea {
   background-color: var(--background-btn-filter);
   border-radius: 4px;
 }
+
+.showcase {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
