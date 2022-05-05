@@ -42,7 +42,7 @@
   min-height: 30px;
   min-width: 30px;
 
-//   color icon close
+  //   color icon close
   border-radius: 50%;
   border: 1px solid var(--form-filed-shadow);
   outline: 1px solid var(--form-filed-shadow);
@@ -50,60 +50,59 @@
   background-color: rgba(255, 255, 255, 0);
 
   cursor: pointer;
- 
+
   &:focus {
     fill: var(--accent-color);
     transition: fill var(--animation);
   }
   &:hover {
-   fill: var(--accent-color);
-   transition: fill var(--animation);
+    fill: var(--accent-color);
+    transition: fill var(--animation);
   }
 }
-
 
 // конец кнопка закрытия бекдропа
 
 //  конпка отправка формы в бекдропе
 .form__btn {
-    text-transform: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    width: 200px;
-    height: 50px;
-  
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 0.06em;
-  
-    color: var(--header-hero-color);
-    background: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border-color: rgba(0, 0, 0, 0.001);
-  
-    cursor: pointer;
-  
-    transition: color var(--animation);
+  text-transform: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
 
-    &:focus {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+
+  color: var(--header-hero-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: rgba(0, 0, 0, 0.001);
+
+  cursor: pointer;
+
+  transition: color var(--animation);
+
+  &:focus {
     background: var(--accent-color-hover);
   }
-    &:hover {
+  &:hover {
     background: var(--accent-color-hover);
   }
-  }
+}
 
 //    конец конпка отправка формы в бекдропе
 
-
-// кнопка футер отправка формы 
+// кнопка футер отправка формы
 .footer__btn {
   width: 200px;
-  margin-left: 12px;
-  padding-left: 29px;
+  height: 50px;
+  // margin-left: 12px;
+  // padding-left: 29px;
 
   display: flex;
   align-items: center;
@@ -128,4 +127,4 @@
 .footer__icon {
   margin-left: 10px;
 }
-// кнопка футер отправка формы 
+// кнопка футер отправка формы

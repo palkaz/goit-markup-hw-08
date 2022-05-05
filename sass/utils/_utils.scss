@@ -1,68 +1,67 @@
 // правильное скрытие заголовка
 .hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-  
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 //   конец правильное скрытие заголовка
-// размеры шрифта навигация контакты 
+// размеры шрифта навигация контакты
 
 .effect {
- 
-  @media screen and (min-width: 768px ){
-      &:after {
-        content: "";
-        width: 100%;
-        height: 4px;
-        position: absolute;
-        bottom: 0px;
-        background: var(--accent-color);
-        border-radius: 2px;
-        // переход 
-        transform: scaleX(0);
-        transition: var(--animation);
-      }
-      
-      &:hover::after {
-        transform: scaleX(1);
-      }
-      
-      &.link.current::after {
-        transform: scaleX(1);
-      }
-      
-      position: relative;
+  @media screen and (min-width: 768px) {
+    &:after {
+      content: "";
+      width: 100%;
+      height: 4px;
+      position: absolute;
+      bottom: 0px;
+      background: var(--accent-color);
+      border-radius: 2px;
+      // переход
+      transform: scaleX(0);
+      transition: var(--animation);
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+    }
+
+    &.link.current::after {
+      transform: scaleX(1);
+    }
+
+    position: relative;
   }
 }
 
-// текущаяя страница в хедере цвет 
+// текущаяя страница в хедере цвет
 .link.current {
   color: var(--accent-color);
 }
-// текущаяя страница полоска в хедере еффект 
+// текущаяя страница полоска в хедере еффект
 
-// стили для футера 
-.footer__list .contact__list {
-  flex-direction: column;
-  align-items: normal;
-}
+// стили для футера
+// .footer__list .contact__list {
+//   flex-direction: column;
+//   align-items: normal;
+// }
 
 .footer__list .contact__item {
   margin-right: 0;
   margin-bottom: 9px;
   color: var(--footer-contact);
 }
-// обрезка крайнего маржина 
-.contact__item{
+// обрезка крайнего маржина
+.contact__item {
   &:last-child {
-  margin: 0;
-}
+    margin: 0;
+  }
 }

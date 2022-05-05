@@ -1,17 +1,17 @@
-// модальное окно backdrop 
+// модальное окно backdrop
 .backdrop {
-    position: fixed;
-    // нужен чтобы форма в футере не наезжала 
-    z-index: 1;
-  
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    
-    // анимация перехода в бэкдропе
+  position: fixed;
+  // нужен чтобы форма в футере не наезжала
+  z-index: 1;
+
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  // анимация перехода в бэкдропе
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
@@ -22,7 +22,6 @@
     pointer-events: none;
     visibility: hidden;
   }
-  
 }
 
 .backdrop__wrapper {
@@ -33,11 +32,12 @@
 
   transform: translate(-50%, -50%);
 
-  min-height: 581px;
-  min-width: 528px;
+  // размер модального  окна
+  // min-height: 581px;
+  min-width: 450px;
   padding: 40px;
 
-  // цвет текста 
+  // цвет текста
   color: var(--title-color);
 
   background: var(--header-hero-color);
@@ -48,9 +48,9 @@
 
 textarea {
   resize: none;
- }
+}
 
- .form__data {
+.form__data {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -82,11 +82,11 @@ textarea {
   margin-left: 12px;
 }
 
-  .form__name {
-    &:focus-visible {
-  outline: 1px solid var(--accent-color);
-  transition: var(--animation);
-    }
+.form__name {
+  &:focus-visible {
+    outline: 1px solid var(--accent-color);
+    transition: var(--animation);
+  }
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -94,13 +94,12 @@ textarea {
   border: 1px solid var(--form-filed-shadow);
   outline: 1px solid var(--form-filed-shadow);
   border-radius: 4px;
-  }
+}
 
- 
 .form__textarea {
   &:focus-visible {
-  outline: 1px solid var(--accent-color);
-  transition: var(--animation);
+    outline: 1px solid var(--accent-color);
+    transition: var(--animation);
   }
 
   width: 100%;
@@ -112,14 +111,15 @@ textarea {
   border-radius: 4px;
 }
 
-// цвет и анимация иконки в инпуте при фокусе 
+// цвет и анимация иконки в инпуте при фокусе
 .form__field:focus-within > .form__icon {
   fill: var(--accent-color);
   transition: var(--animation);
-} 
-
+}
 
 .form__wrapper {
+  font-size: 12px;
+
   line-height: 14px;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
@@ -132,11 +132,15 @@ textarea {
   padding: 12px 16px;
 }
 
-.form__textarea{
+.form__textarea {
   &::placeholder {
-  color: rgba(117, 117, 117, 0.5);}
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
+.checkbox {
+  margin-bottom: 0;
+}
 
 .checkbox__input {
   position: absolute;
@@ -155,7 +159,7 @@ textarea {
 
 .checkbox__span {
   height: 16px;
-  margin-right: 7px;
+  margin-right: 8px;
 }
 
 .checkbox__input:checked + .checkbox__span {
@@ -167,27 +171,26 @@ textarea {
   transition: fill var(--animation), background-image var(--animation);
 }
 
-
-
 .checkbox__input:focus + .checkbox__span {
   fill: var(--accent-color);
   transition: fill var(--animation);
 }
-
 
 .form__data.checkbox {
   margin-top: 25px;
 }
 
 .checkbox__label {
+  font-size: 12px;
   display: flex;
-  margin-left: 13px;
   color: var(--txt-color);
   align-items: center;
+
+  //  margin-left: 13px;
 }
 
 .checkbox__link {
   color: var(--accent-color);
   text-decoration: underline var(--accent-color);
-  margin-left: 5px;  
+  margin-left: 2px;
 }
