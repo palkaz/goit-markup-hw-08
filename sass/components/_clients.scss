@@ -1,0 +1,62 @@
+// секция наши клиенты
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.clients__container.container {
+  padding: 0;
+  margin: 0;
+}
+
+.clients__title {
+  margin-bottom: 15px;
+}
+
+// размещение иконок наши клиенты
+.clients__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  fill: var(--icon-items-color);
+}
+
+// иконки блочные, размеры их
+.clients__list {
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
+  // width: 170px;
+  // height: 92px;
+}
+
+// иконки блочные, расположение их
+.clients__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  fill: var(--icon-items-color);
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  // переход
+  transition: fill var(--animation), border var(--animation);
+}
+
+.clients__item {
+  &:hover {
+    background-color: var(--header-hero-color);
+    color: var(--accent-color);
+    border: var(--accent-color) 1px solid;
+    fill: currentColor;
+  }
+
+  &:focus {
+    background-color: var(--header-hero-color);
+    color: var(--accent-color);
+    border: var(--accent-color) 1px solid;
+    fill: currentColor;
+  }
+}
+// конец секции наши клиенты
