@@ -1,18 +1,26 @@
 .nav__menu {
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    
-    background-color: transparent;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
 }
 
 .nav__menu .menu__close {
-    display: none;
+  display: none;
+}
+
+.nav__menu.is-open .menu__close {
+  display: block;
+}
+
+.nav__menu.is-open .menu__menu {
+  display: none;
 }
 
 .nav__menu:focus,
 .nav__menu:hover,
-.nav__menu:visited{
-fill: var(--accent-color);
+.nav__menu:visited {
+  fill: var(--accent-color);
 }
