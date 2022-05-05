@@ -32,13 +32,17 @@
 
 // кнопка закрытия бекдропа
 .backdrop__btn {
-  position: absolute;
+  // position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 8px;
-  right: 8px;
+  // top: 8px;
+  // right: 8px;
   padding: 0;
+
+  margin-left: 100%;
+  margin-top: -32px;
+
   min-height: 30px;
   min-width: 30px;
 
