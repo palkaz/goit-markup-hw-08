@@ -8,7 +8,7 @@
 }
 
 .nav__menu.is-open {
-  position: absolute;
+  position: fixed;
   // позиционирование кнопки
   top: 10px;
   left: calc(100% - 55px);
@@ -20,6 +20,7 @@
 
 .nav__menu.is-open .menu__close {
   display: block;
+  // fill: var(--title-color);
 }
 
 .nav__menu.is-open .menu__menu {
@@ -30,4 +31,16 @@
 .nav__menu:hover,
 .nav__menu:visited {
   fill: var(--accent-color);
+}
+
+.menu__close:focus .link.current {
+  color: var(--title-color);
+}
+
+.menu__close:hover .link.current {
+  color: var(--title-color);
+}
+
+.menu__close:visited .link.current {
+  color: var(--title-color);
 }

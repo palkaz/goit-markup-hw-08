@@ -12,12 +12,63 @@
   // align-items: flex-end;
   justify-content: space-between;
   align-items: center;
+  padding-top: 10px;
 }
+
+.header__socials {
+  display: none;
+  width: 0;
+}
+
+.header__container.is-open body {
+  position: fixed;
+}
+
 // скрытие лого при моб меню
 .header__container.is-open .header__link {
   opacity: 0;
-  position: absolute;
+  position: relative;
   z-index: -1;
+}
+// настройки для блока соц сети хедер
+.header__container.is-open .socials__link {
+  color: var(--accent-color);
+  border-radius: 0;
+
+  padding-right: 10px;
+}
+
+.header__container.is-open .socials__link:hover {
+  background-color: inherit;
+}
+
+.header__container.is-open .socials__item:last-child {
+  margin-right: 0;
+  border: 0;
+}
+
+.header__container.is-open .header__socials {
+  display: block;
+  justify-content: flex-start;
+
+  font-size: 18px;
+  line-height: 1.22;
+
+  letter-spacing: 0.02em;
+}
+
+.header__container.is-open .socials__list {
+  justify-content: normal;
+}
+
+.header__container.is-open .socials__item {
+  height: 40px;
+  width: auto;
+
+  margin-right: 10px;
+  margin-top: 64px;
+
+  border-right: 1px solid var(--form-filed-shadow);
 }
 
 .header__container.is-open .header__list {
@@ -28,11 +79,11 @@
 
   letter-spacing: 0.02em;
 
-  margin-top: 38%;
+  margin-top: 76%;
 }
 
 .header__container.is-open {
-  position: absolute;
+  position: fixed;
 
   width: 100%;
 
@@ -48,7 +99,7 @@
   height: 192px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 
   font-weight: 500;
   font-size: 40px;
