@@ -7,6 +7,13 @@
   background-color: transparent;
 }
 
+.nav__menu.is-open {
+  position: absolute;
+  // позиционирование кнопки
+  top: 10px;
+  left: calc(100% - 55px);
+}
+
 .nav__menu .menu__close {
   display: none;
 }

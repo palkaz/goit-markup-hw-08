@@ -1,32 +1,31 @@
-// блок навигации 
+// блок навигации
 
 .nav__list.list {
-    display: none;
-    padding: 0;
-  }
-
+  display: none;
+  padding: 0;
+}
 
 // .nav__list.list {
 //     display: flex;
 //   }
-  
+
 //   .nav__item {
 //     margin-right: 50px;
 //     position: relative;
 //   }
-    
-//   // мыло тел в строку 
+
+//   // мыло тел в строку
 //   .nav__link.link {
 //     display: flex;
 //     align-items: center;
-//     // компенсация падинга навигации футер 
+//     // компенсация падинга навигации футер
 //     padding-top: 28px;
 //     padding-bottom: 28px;
 //   }
-  
+
 //   .nav__list{
 //     &:last-child {
 //     margin: 0;
 //   }
 // }
-  // конец блока навигации 
+// конец блока навигации

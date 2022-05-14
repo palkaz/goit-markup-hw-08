@@ -1,28 +1,34 @@
-// блок контактов 
+// блок контактов
 // настройки для хедера
 .contact.header__list {
-    display: none;
+  display: none;
 }
 
-// .contact__list {
-//     display: flex;
-//     align-items: center;
-//   }
-  
-//   // расстояние между мылом и тел 
+.contact__list {
+  display: flex;
+
+  flex-direction: column-reverse;
+
+  // align-items: center;
+}
+
+//   // расстояние между мылом и тел
 //   .contact__item {
 //     margin-right: 50px;
 //   }
-  
+
 //   // растояние между kонтаkтами
-//   //  цвет иконки 
-//   .contact__icon {
-//     margin-right: 10px;
-//     fill: currentColor;
-//   }
-  
-//   // иконки контакты в центр 
-//   .contact__link.link {
-//     display: flex;
+//   //  цвет иконки
+// моб версия скрытие иконок
+.contact__icon {
+  display: none;
+
+  // margin-right: 10px;
+  // fill: currentColor;
+}
+
+//   // иконки контакты в центр
+// .contact__link.link {
+//       display: flex;
 //     align-items: center;
-//   }
+// }

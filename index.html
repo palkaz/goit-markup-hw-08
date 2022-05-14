@@ -23,7 +23,7 @@
   </head>
   <body>
     <header class="header accent">
-      <div class="container header__container">
+      <div class="container header__container" data-menu id="menu-container">
         <!--Основная навигация-->
         <a href="" class="header__link logo"
           >Web<span class="logo__primary">Studio</span>
@@ -50,6 +50,7 @@
             type="button"
             class="nav__menu menu"
             aria-expanded="false"
+            aria-controls="menu-container"
             data-menu-button
           >
             <svg
@@ -71,7 +72,10 @@
         <div class="contact header__list">
           <ul class="contact__list list">
             <li class="contact__item">
-              <a href="mailto:info@devstudio.com" class="contact__link link">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contact__link link mail"
+              >
                 <svg class="contact__icon" width="16" height="12">
                   <use href="./images/symbol-defs-all.svg#icon-envelope"></use>
                 </svg>
@@ -79,7 +83,7 @@
               </a>
             </li>
             <li class="contact__item">
-              <a href="tel:+380961111111" class="contact__link link">
+              <a href="tel:+380961111111" class="contact__link link tel">
                 <svg class="contact__icon" width="10" height="16">
                   <use
                     href="./images/symbol-defs-all.svg#icon-smartphone"
