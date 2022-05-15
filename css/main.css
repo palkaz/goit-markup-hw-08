@@ -139,6 +139,7 @@ img {
 }
 
 .container {
+  min-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
@@ -474,7 +475,6 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
 }
 
 .header__socials {
@@ -495,6 +495,10 @@ textarea {
 }
 
 .header__container.is-open .socials__link:hover {
+  background-color: inherit;
+}
+
+.header__container.is-open .socials__link:focus {
   background-color: inherit;
 }
 
