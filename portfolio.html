@@ -23,7 +23,7 @@
   </head>
   <body>
     <header class="header accent">
-      <div class="container header__container">
+      <div class="container header__container" data-menu id="menu-container">
         <!--Основная навигация-->
         <a href="" class="header__link logo"
           >Web<span class="logo__primary">Studio</span></a
@@ -31,6 +31,28 @@
 
         <nav class="nav">
           <!--Ссылки на другие страницы или секции текущей страницы -->
+          <button
+            type="button"
+            class="nav__menu menu"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="menu__close"
+                href="./images/symbol-defs-all.svg#icon-close"
+              ></use>
+              <use
+                class="menu__menu"
+                href="./images/symbol-defs-all.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
           <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link link effect" href="./index.html">Студия</a>
@@ -62,6 +84,22 @@
                 </svg>
                 +38 096 111 11 11
               </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__socials socials">
+          <ul class="socials__list list">
+            <li class="socials__item">
+              <a class="socials__link link" href="">Instagram</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link link" href="">Twitter</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link link" href="">Facebook</a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link link" href="">Linkedin</a>
             </li>
           </ul>
         </div>
@@ -443,5 +481,7 @@
         </div>
       </div>
     </footer>
+    <!-- подключение мею навигации моб. версия -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
