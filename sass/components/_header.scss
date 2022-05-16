@@ -80,11 +80,12 @@
 
   letter-spacing: 0.02em;
 
-  margin-top: 76%;
+  margin-top: 302px;
 }
 
 .header__container.is-open {
   position: fixed;
+  z-index: 1;
 
   width: 100%;
 
