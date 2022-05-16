@@ -1,21 +1,28 @@
 // блок навигации
 .nav {
   display: flex;
+  @media screen and (min-width: 768px) {
+    // margin-right: 84px;
+  }
 }
 
 .nav__list.list {
-  display: none;
-  padding: 0;
+  @media screen and (max-width: 767px) {
+    display: none;
+    padding: 0;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
-// .nav__list.list {
-//     display: flex;
-//   }
-
-//   .nav__item {
-//     margin-right: 50px;
-//     position: relative;
-//   }
+// позицианирование планшет
+.nav__item {
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+    position: relative;
+  }
+}
 
 //   // мыло тел в строку
 //   .nav__link.link {

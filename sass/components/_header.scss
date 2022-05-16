@@ -9,11 +9,19 @@
 
 .header__container {
   display: flex;
-  // align-items: flex-end;
   justify-content: space-between;
   align-items: center;
-  // padding-top: 10px;
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    width: 100%;
+  }
 }
+// позицианирование планшет
+// .header__link {
+//   @media screen and (min-width: 768px) {
+//     // margin-right: 88px;
+//   }
+// }
 
 .header__socials {
   display: none;
