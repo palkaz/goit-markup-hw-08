@@ -10,6 +10,11 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+body.is-open {
+  overflow: hidden;
+}
+
 .h2 {
   font-weight: 700;
   font-size: 28px;
