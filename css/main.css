@@ -432,7 +432,11 @@ textarea {
 }
 
 .hero {
+  max-width: 1600px;
   background-color: var(--header-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: radial-gradient(at center, var(--hero-overlay), var(--hero-overlay)), url(../images/img-hero.jpg);
   color: var(--header-hero-color);
   padding-top: 118px;
   padding-bottom: 198px;
