@@ -121,12 +121,17 @@
             для вашего бизнеса
           </h1>
 
-          <button type="button" class="hero__btn" data-modal-open>
+          <button
+            type="button"
+            class="hero__btn"
+            data-modal-open
+            data-scroll-block
+          >
             Заказать услугу
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="backdrop__wrapper">
-              <button class="backdrop__btn" data-modal-close>
+              <button class="backdrop__btn" data-modal-close data-scroll>
                 <svg width="18px" height="18px">
                   <use href="./images/symbol-defs-all.svg#icon-close"></use>
                 </svg>
@@ -693,5 +698,7 @@
     <script src="./js/modal.js"></script>
     <!-- подключение мею навигации моб. версия -->
     <script src="./js/menu.js"></script>
+    <!-- подключение антискролла при бекдропе -->
+    <script src="./js/backdrop.js"></script>
   </body>
 </html>
