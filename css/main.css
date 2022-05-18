@@ -80,6 +80,7 @@ body.is-open {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .accent a {
@@ -152,7 +153,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 100%;
   }
 }
 
@@ -160,7 +161,7 @@ img {
   .container {
     padding-top: 0;
     padding-bottom: 0;
-    width: 768px;
+    width: 100%;
   }
 }
 
@@ -808,11 +809,26 @@ textarea {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .userpic__line {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .userpic__wrapper {
   margin-bottom: 30px;
   background-color: var(--header-hero-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .userpic__wrapper {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
 }
 
 .userpic__name {
