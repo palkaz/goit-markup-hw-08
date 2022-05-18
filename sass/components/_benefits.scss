@@ -12,6 +12,9 @@
 .benefits {
   margin-top: 60px;
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
   // padding-top: 94px;
 }
 // размещение иконок преимущества
@@ -19,6 +22,8 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    // снятие маржина для форимрования контейнера списка
+    margin: -15px;
   }
 }
 
@@ -50,12 +55,15 @@
 
 // отступ между колонами
 .benefits__column {
-  @media screen and (min-width: 768px) {
-    width: 50%;
-    margin-right: 30px;
-    &:nth-child(2n) {
-      margin-right: 0;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
+  }
+  // маржины для колонки по 2
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
 }
 
