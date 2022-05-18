@@ -750,6 +750,19 @@ textarea {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__wrapper {
+    display: flex;
+  }
+}
+
 .benefits__wrapper {
   margin-bottom: 30px;
   display: flex;
@@ -758,6 +771,16 @@ textarea {
   align-items: center;
   background-color: var(--background-btn-filter);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__column {
+    width: 50%;
+    margin-right: 30px;
+  }
+  .benefits__column:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 .showcase {

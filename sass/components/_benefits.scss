@@ -15,10 +15,18 @@
   // padding-top: 94px;
 }
 // размещение иконок преимущества
-// .benefits__list,
-// .clients__wrapper {
-//   display: flex;
-// }
+.benefits__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.clients__wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
 
 // .benefits {
 //   padding-top: 94px;
@@ -41,9 +49,15 @@
 }
 
 // отступ между колонами
-// .benefits__column {
-//   margin-right: 30px;
-// }
+.benefits__column {
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    margin-right: 30px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
 
 // выбор крайних элементов
 // .benefits__column{
