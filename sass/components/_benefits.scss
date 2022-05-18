@@ -15,6 +15,9 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 60px;
   }
+  @media screen and (min-width: 1600px) {
+    margin: 94px 0;
+  }
   // padding-top: 94px;
 }
 // размещение иконок преимущества
@@ -25,12 +28,21 @@
     // снятие маржина для форимрования контейнера списка
     margin: -15px;
   }
+
+  @media screen and (min-width: 1600px) {
+    margin: 0;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
 .clients__wrapper {
   @media screen and (min-width: 768px) {
     display: flex;
   }
+  //  @media screen and (min-width: 1600px) {
+
+  //  }
 }
 
 // .benefits {
@@ -65,12 +77,15 @@
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
+  @media screen and (min-width: 1600px) {
+    // выбор крайних элементов
+    margin: 0;
+    width: 270px;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
-// выбор крайних элементов
-// .benefits__column{
-//   &:last-child {
-//   margin-right: 0;
-// }
-// }
 // конец секция преимущества

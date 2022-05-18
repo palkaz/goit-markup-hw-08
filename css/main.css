@@ -480,6 +480,13 @@ textarea {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1600px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
 .logo {
   color: var(--accent-color);
   text-decoration: none;
@@ -781,11 +788,25 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .benefits {
+    margin: 94px 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .benefits__list {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .benefits__list {
+    margin: 0;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 
@@ -815,6 +836,17 @@ textarea {
   .benefits__column {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .benefits__column {
+    margin: 0;
+    width: 270px;
+    margin-right: 30px;
+  }
+  .benefits__column:last-child {
+    margin-right: 0;
   }
 }
 
