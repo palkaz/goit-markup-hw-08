@@ -10,6 +10,14 @@
   font-style: normal;
   margin-bottom: 9px;
 }
+// обертка для планшетной версии
+.footer__tabblet-warpper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 
 .footer__wrapper {
   display: flex;
@@ -43,5 +51,8 @@
   align-items: center;
 
   margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
   // margin-left: 70px;
 }

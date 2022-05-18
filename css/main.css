@@ -954,6 +954,14 @@ textarea {
   margin-bottom: 9px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__tabblet-warpper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
 .footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -981,6 +989,12 @@ textarea {
   margin-top: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__socials {
+    margin: 0;
+  }
+}
+
 .footer__form {
   display: flex;
   flex-direction: column;
@@ -1000,6 +1014,12 @@ textarea {
 
 .footer__form button:focus {
   background-color: var(--accent-color-hover);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__form {
+    width: 450px;
+  }
 }
 
 .footer__user {
