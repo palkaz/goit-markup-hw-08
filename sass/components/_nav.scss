@@ -24,14 +24,15 @@
   }
 }
 
-//   // мыло тел в строку
-//   .nav__link.link {
-//     display: flex;
-//     align-items: center;
-//     // компенсация падинга навигации футер
-//     padding-top: 28px;
-//     padding-bottom: 28px;
-//   }
+// подчеркивание хедер
+.nav__link {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  // компенсация падинга навигации футер
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
 
 //   .nav__list{
 //     &:last-child {

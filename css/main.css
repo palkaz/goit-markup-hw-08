@@ -156,6 +156,13 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 .hero__btn {
   background: var(--accent-color);
   color: var(--header-hero-color);
@@ -623,6 +630,17 @@ textarea {
   }
 }
 
+.nav__link {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__link {
+    display: flex;
+  }
+}
+
 .nav__menu {
   background-color: transparent;
 }
@@ -693,8 +711,29 @@ textarea {
   flex-direction: column-reverse;
 }
 
+@media screen and (min-width: 768px) {
+  .contact__list {
+    flex-direction: column;
+  }
+}
+
 .contact__icon {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__icon {
+    display: flex;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact__link.link {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .benefits__title {
