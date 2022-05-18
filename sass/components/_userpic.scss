@@ -12,8 +12,14 @@
 }
 
 .userpic__line {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   @media screen and (min-width: 768px) {
-    display: flex;
     flex-wrap: wrap;
     // снятие маржина для форимрования контейнера списка
     margin: -15px;

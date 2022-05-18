@@ -809,9 +809,19 @@ textarea {
   margin-bottom: 30px;
 }
 
+.userpic__line {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .userpic__line {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .userpic__line {
-    display: flex;
     flex-wrap: wrap;
     margin: -15px;
   }
@@ -1110,7 +1120,6 @@ textarea {
 
 .exemple__img {
   min-width: 450px;
-  height: auto;
 }
 
 .exemple__cards {
