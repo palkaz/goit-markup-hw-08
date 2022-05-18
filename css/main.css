@@ -492,13 +492,6 @@ textarea {
   align-items: center;
 }
 
-@media screen and (min-width: 768px) {
-  .header__container {
-    margin-left: 0;
-    width: 100%;
-  }
-}
-
 .header__socials {
   display: none;
   width: 0;
@@ -1059,6 +1052,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .filter {
     justify-content: center;
+    margin-bottom: 15px;
   }
 }
 
@@ -1117,17 +1111,20 @@ textarea {
 
 .exemple__wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
 }
 
-.exemple__img {
-  min-width: 450px;
+@media screen and (max-width: 767px) {
+  .exemple__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.exemple__cards {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .exemple__wrapper {
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
 }
 
 .exemple__shadows {
@@ -1144,12 +1141,24 @@ textarea {
   box-shadow: var(--box-shadow-cards);
 }
 
-.exemple__cards:nth-child(3n) {
-  margin-right: 0;
+.exemple__cards {
+  margin-bottom: 30px;
 }
 
-.exemple__cards:last-child {
-  margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .exemple__cards:last-child {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .exemple__cards {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+  .exemple__cards:last-child {
+    margin-bottom: 60px;
+  }
 }
 
 .exemple__box {
