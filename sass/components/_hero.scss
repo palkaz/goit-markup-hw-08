@@ -1,6 +1,6 @@
 //  блок герой
 .hero {
-  max-width: 1600px;
+  max-width: 480px;
   background-color: var(--header-bg);
   background-repeat: no-repeat;
   background-position: center;
@@ -14,10 +14,20 @@
   color: var(--header-hero-color);
 
   padding-top: 118px;
-  padding-bottom: 198px;
+  padding-bottom: 118px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {

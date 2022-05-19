@@ -6,7 +6,7 @@
   }
 }
 
-.nav__list.list {
+.nav__list {
   @media screen and (max-width: 767px) {
     display: none;
     padding: 0;
@@ -21,6 +21,9 @@
   @media screen and (min-width: 768px) {
     margin-right: 50px;
     position: relative;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -30,7 +33,7 @@
     display: flex;
   }
   // компенсация падинга навигации футер
-  padding-top: 28px;
+  padding-top: 32px;
   padding-bottom: 28px;
 }
 
