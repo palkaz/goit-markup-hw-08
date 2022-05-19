@@ -146,7 +146,8 @@ img {
 }
 
 .container {
-  padding: 10px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -159,8 +160,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    padding-top: 0;
-    padding-bottom: 0;
     width: 768px;
   }
 }
@@ -778,19 +777,13 @@ textarea {
 }
 
 .benefits {
-  margin-top: 60px;
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .benefits {
-    margin-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1600px) {
   .benefits {
-    margin: 94px 0;
+    padding-top: 94px;
   }
 }
 
@@ -854,6 +847,14 @@ textarea {
   display: none;
 }
 
+@media screen and (min-width: 1600px) {
+  .showcase {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .userpic {
   background-color: var(--background-btn-filter);
   padding-top: 60px;
@@ -887,6 +888,12 @@ textarea {
   background-color: var(--header-hero-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .userpic__wrapper:last-child {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -961,7 +968,7 @@ textarea {
 }
 
 .clients__title {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .clients__wrapper {
@@ -973,6 +980,14 @@ textarea {
 .clients__list {
   width: calc((100% - 4 * 15px) / 2);
   margin: 15px;
+}
+
+.clients__list:nth-child(-n + 2) {
+  margin-top: 0;
+}
+
+.clients__list:nth-child(n + 5) {
+  margin-bottom: 0;
 }
 
 .clients__item {

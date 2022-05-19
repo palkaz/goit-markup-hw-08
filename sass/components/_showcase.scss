@@ -1,5 +1,10 @@
 .showcase {
   display: none;
+  @media screen and (min-width: 1600px) {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 // .showcase {

@@ -10,15 +10,14 @@
 }
 
 .benefits {
-  margin-top: 60px;
-  margin-bottom: 30px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // @media screen and (min-width: 768px) {
+  //   padding-bottom: 30px;
+  // }
   @media screen and (min-width: 1600px) {
-    margin: 94px 0;
+    padding-top: 94px;
   }
-  // padding-top: 94px;
 }
 // размещение иконок преимущества
 .benefits__list {

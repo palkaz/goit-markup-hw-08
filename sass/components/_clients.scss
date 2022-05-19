@@ -9,7 +9,7 @@
 // }
 
 .clients__title {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 // размещение иконок наши клиенты
@@ -24,6 +24,13 @@
 .clients__list {
   width: calc((100% - 4 * 15px) / 2);
   margin: 15px;
+  &:nth-child(-n + 2) {
+    margin-top: 0;
+  }
+
+  &:nth-child(n + 5) {
+    margin-bottom: 0;
+  }
   // width: 170px;
   // height: 92px;
 }
