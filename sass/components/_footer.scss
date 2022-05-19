@@ -17,6 +17,10 @@
     justify-content: space-around;
     align-items: center;
   }
+
+  @media screen and (min-width: 1600px) {
+    margin-right: 93px;
+  }
 }
 
 .footer__wrapper {
@@ -44,10 +48,15 @@
   margin-bottom: 20px;
 }
 
+.footer__contact {
+  display: flex;
+}
+
 .footer__list {
   @media screen and (min-width: 1600px) {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
   }
 }
 

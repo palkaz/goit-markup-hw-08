@@ -763,7 +763,7 @@ textarea {
 @media screen and (min-width: 1600px) {
   .contact__list {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
@@ -1131,6 +1131,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .footer__tabblet-warpper {
+    margin-right: 93px;
+  }
+}
+
 .footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -1158,10 +1164,15 @@ textarea {
   margin-bottom: 20px;
 }
 
+.footer__contact {
+  display: flex;
+}
+
 @media screen and (min-width: 1600px) {
   .footer__list {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
   }
 }
 
