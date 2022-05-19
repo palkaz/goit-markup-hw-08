@@ -25,6 +25,11 @@
   @media screen and (min-width: 768px) {
     width: 450px;
   }
+  @media screen and (min-width: 1600px) {
+    width: auto;
+    flex-direction: row;
+    align-items: normal;
+  }
 }
 
 .footer__user {
@@ -33,6 +38,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 1600px) {
+    margin-top: 0;
+    display: flex;
+    align-items: flex-start;
+  }
 }
 
 .footer__input {
@@ -47,4 +58,9 @@
 
   color: var(--header-hero-color);
   background-color: var(--background-hero-footer);
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 0;
+    margin-right: 12px;
+    width: 358px;
+  }
 }

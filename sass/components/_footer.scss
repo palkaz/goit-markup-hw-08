@@ -23,6 +23,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (min-width: 1600px) {
+    align-items: normal;
+    margin-right: 70px;
+  }
 }
 
 .footer__link {
@@ -40,6 +44,13 @@
   margin-bottom: 20px;
 }
 
+.footer__list {
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
 // .footer__list.container {
 //   display: flex;
 //   align-items: baseline;
@@ -54,5 +65,8 @@
   @media screen and (min-width: 768px) {
     margin: 0;
   }
-  // margin-left: 70px;
+  @media screen and (min-width: 1600px) {
+    align-items: normal;
+    // margin-left: 70px;
+  }
 }
