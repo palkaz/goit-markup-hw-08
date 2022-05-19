@@ -538,6 +538,12 @@ textarea {
   position: relative;
 }
 
+@media screen and (min-width: 1600px) {
+  .header {
+    border-bottom: 1px solid var(--header-line-color);
+  }
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;

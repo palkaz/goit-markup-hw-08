@@ -5,6 +5,11 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   position: relative;
+
+  @media screen and (min-width: 1600px) {
+    // полоска в хедере
+    border-bottom: 1px solid var(--header-line-color);
+  }
 }
 
 .header__container {
