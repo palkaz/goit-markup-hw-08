@@ -6,6 +6,8 @@
   @media screen and (min-width: 1600px) {
     padding-top: 94px;
     padding-bottom: 94px;
+    // padding-left: 200px;
+    // padding-right: 200px;
   }
 }
 
@@ -69,6 +71,13 @@
     &:first-child {
       margin-left: 0;
     }
+  }
+}
+
+.userpic__container {
+  @media screen and (min-width: 1600px) {
+    padding-left: 215px;
+    padding-right: 215px;
   }
 }
 

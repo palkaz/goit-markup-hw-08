@@ -18,21 +18,35 @@
   flex-wrap: wrap;
 
   fill: var(--icon-items-color);
+  @media screen and (min-width: 1600px) {
+    justify-content: center;
+  }
 }
 
 // иконки блочные, размеры их
 .clients__list {
-  width: calc((100% - 4 * 15px) / 2);
-  margin: 15px;
-  &:nth-child(-n + 2) {
-    margin-top: 0;
+  @media screen and (max-width: 1599px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+
+    &:nth-child(-n + 2) {
+      margin-top: 0;
+    }
+
+    &:nth-child(n + 5) {
+      margin-bottom: 0;
+    }
   }
 
-  &:nth-child(n + 5) {
-    margin-bottom: 0;
+  @media screen and (min-width: 1600px) {
+    width: 170px;
+    height: 92px;
+
+    margin-left: 30px;
+    &:first-child {
+      margin-left: 0;
+    }
   }
-  // width: 170px;
-  // height: 92px;
 }
 
 // иконки блочные, расположение их

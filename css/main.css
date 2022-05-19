@@ -973,6 +973,13 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .userpic__container {
+    padding-left: 215px;
+    padding-right: 215px;
+  }
+}
+
 .userpic__name {
   font-weight: 500;
   font-size: 16px;
@@ -1047,17 +1054,34 @@ textarea {
   fill: var(--icon-items-color);
 }
 
-.clients__list {
-  width: calc((100% - 4 * 15px) / 2);
-  margin: 15px;
+@media screen and (min-width: 1600px) {
+  .clients__wrapper {
+    justify-content: center;
+  }
 }
 
-.clients__list:nth-child(-n + 2) {
-  margin-top: 0;
+@media screen and (max-width: 1599px) {
+  .clients__list {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  .clients__list:nth-child(-n + 2) {
+    margin-top: 0;
+  }
+  .clients__list:nth-child(n + 5) {
+    margin-bottom: 0;
+  }
 }
 
-.clients__list:nth-child(n + 5) {
-  margin-bottom: 0;
+@media screen and (min-width: 1600px) {
+  .clients__list {
+    width: 170px;
+    height: 92px;
+    margin-left: 30px;
+  }
+  .clients__list:first-child {
+    margin-left: 0;
+  }
 }
 
 .clients__item {
