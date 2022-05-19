@@ -326,6 +326,13 @@ img {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .backdrop__wrapper {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
+
 textarea {
   resize: none;
 }
