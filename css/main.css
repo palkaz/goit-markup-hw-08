@@ -473,16 +473,17 @@ textarea {
 
 .hero {
   max-width: 480px;
-  background-color: var(--header-bg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: radial-gradient(at center, var(--hero-overlay), var(--hero-overlay)), url(../images/img-hero.jpg);
-  color: var(--header-hero-color);
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--header-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: radial-gradient(at center, var(--hero-overlay), var(--hero-overlay)), url(../images/hero/hero-480-1x.jpg);
+  color: var(--header-hero-color);
+  background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -496,6 +497,12 @@ textarea {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/hero-480-2x.jpg);
   }
 }
 
