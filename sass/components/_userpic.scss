@@ -6,8 +6,6 @@
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
-    // padding-left: 200px;
-    // padding-right: 200px;
   }
 }
 
@@ -31,7 +29,6 @@
 
     // снятие маржина для форимрования контейнера списка
     margin: -15px;
-    // flex-direction: column;
   }
 
   @media screen and (min-width: 1200px) {
@@ -40,11 +37,6 @@
   }
 }
 
-// .userpic__wrapper {
-//   &:first-child {
-//     margin: 0;
-//   }
-// }
 .userpic__wrapper {
   // заполнение фоткой тумбы
   & img {
@@ -63,17 +55,7 @@
       margin: 0;
     }
   }
-  @media screen and (min-width: 768px) {
-    & img {
-      width: 354px;
-    }
-  }
 
-  @media screen and (min-width: 1200px) {
-    & img {
-      width: 270px;
-    }
-  }
   // маржины для колонки по 2
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 2 * 30px) / 2);

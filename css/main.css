@@ -1037,18 +1037,6 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .userpic__wrapper img {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .userpic__wrapper img {
-    width: 270px;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .userpic__wrapper {
     width: calc((100% - 2 * 30px) / 2);
