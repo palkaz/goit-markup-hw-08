@@ -9,7 +9,10 @@
     justify-content: center;
     margin-bottom: 15px;
   }
-  // margin-bottom: 50px;
+
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__wrapper {
