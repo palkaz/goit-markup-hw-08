@@ -18,14 +18,14 @@
   flex-wrap: wrap;
 
   fill: var(--icon-items-color);
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     justify-content: center;
   }
 }
 
 // иконки блочные, размеры их
 .clients__list {
-  @media screen and (max-width: 1599px) {
+  @media screen and (max-width: 1199px) {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
 
@@ -38,7 +38,7 @@
     }
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     width: 170px;
     height: 92px;
 

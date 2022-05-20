@@ -6,7 +6,7 @@
   letter-spacing: 0.02em;
   position: relative;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     // полоска в хедере
     border-bottom: 1px solid var(--header-line-color);
   }
@@ -16,7 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     justify-content: space-evenly;
   }
 }

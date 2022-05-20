@@ -3,7 +3,7 @@
   background-color: var(--background-btn-filter);
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
     // padding-left: 200px;
@@ -13,7 +13,7 @@
 
 .userpic__title {
   margin-bottom: 30px;
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 }
@@ -26,15 +26,17 @@
     align-items: center;
   }
 
-  @media screen and (max-width: 1599px) {
+  @media screen and (max-width: 1199px) {
     flex-wrap: wrap;
+
     // снятие маржина для форимрования контейнера списка
     margin: -15px;
     // flex-direction: column;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 
@@ -44,6 +46,10 @@
 //   }
 // }
 .userpic__wrapper {
+  // заполнение фоткой тумбы
+  & img {
+    width: 100%;
+  }
   background-color: var(--header-hero-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -59,12 +65,12 @@
   }
 
   // маржины для колонки по 2
-  @media screen and (min-width: 768px) and (max-width: 1599px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     width: 100%;
     margin-left: 30px;
 
@@ -75,7 +81,7 @@
 }
 
 .userpic__container {
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     padding-left: 215px;
     padding-right: 215px;
   }
