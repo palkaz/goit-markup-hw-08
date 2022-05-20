@@ -13,7 +13,6 @@
   flex-direction: column-reverse;
 
   @media screen and (min-width: 1200px) {
-    flex-direction: row;
     align-items: flex-start;
   }
 }
