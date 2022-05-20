@@ -17,15 +17,9 @@
   justify-content: space-between;
   align-items: center;
   @media screen and (min-width: 1200px) {
-    justify-content: space-evenly;
+    justify-content: normal;
   }
 }
-// позицианирование планшет
-// .header__link {
-//   @media screen and (min-width: 768px) {
-//     // margin-right: 88px;
-//   }
-// }
 
 .header__socials {
   display: none;
@@ -152,8 +146,16 @@
   // увеличение кликкабельной области
   padding-top: 16px;
   padding-bottom: 16px;
-  // padding-top: 24px;
-  // padding-bottom: 25px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+.header__list .contact__list {
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 //конец  блок хедер

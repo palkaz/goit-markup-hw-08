@@ -552,7 +552,7 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .header__container {
-    justify-content: space-evenly;
+    justify-content: normal;
   }
 }
 
@@ -665,6 +665,19 @@ textarea {
   padding-bottom: 16px;
 }
 
+@media screen and (min-width: 1200px) {
+  .contact__list .header__link.logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__list .contact__list {
+    flex-direction: row;
+  }
+}
+
 .nav {
   display: flex;
 }
@@ -679,6 +692,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .nav__list {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    margin-left: 93px;
   }
 }
 
@@ -765,6 +784,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .contact.header__list {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact.header__list {
+    margin-left: 305px;
   }
 }
 
