@@ -555,6 +555,7 @@ textarea {
 }
 
 .header {
+  padding: 10px 0;
   font-weight: 500;
   letter-spacing: 0.02em;
   position: relative;
@@ -817,7 +818,7 @@ textarea {
 
 .contact__list {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1132,6 +1133,7 @@ textarea {
 .clients__wrapper {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
   fill: var(--icon-items-color);
 }
 
@@ -1145,9 +1147,6 @@ textarea {
   .clients__list {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
-  }
-  .clients__list:nth-child(-n + 2) {
-    margin-top: 0;
   }
   .clients__list:nth-child(n + 5) {
     margin-bottom: 0;
@@ -1169,8 +1168,8 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: 210px;
+  height: 92px;
   fill: var(--icon-items-color);
   border: 1px solid #afb1b8;
   box-sizing: border-box;

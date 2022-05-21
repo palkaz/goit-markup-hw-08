@@ -13,7 +13,7 @@
 .contact__list {
   display: flex;
 
-  flex-direction: column-reverse;
+  flex-direction: column;
 
   @media screen and (min-width: 1200px) {
     align-items: flex-start;
