@@ -13,6 +13,9 @@ body {
 
 body.is-open {
   overflow: hidden;
+  // @media screen and (max-width: 768px) {
+  //   overflow: visible;
+  // }
 }
 
 .h2 {
