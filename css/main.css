@@ -555,13 +555,12 @@ textarea {
 }
 
 .header {
-  padding: 10px 0;
   font-weight: 500;
   letter-spacing: 0.02em;
   position: relative;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header {
     border-bottom: 1px solid var(--header-line-color);
   }
@@ -1135,7 +1134,6 @@ textarea {
   .clients__wrapper {
     flex-wrap: nowrap;
     justify-content: center;
-    margin: 0;
   }
 }
 
@@ -1161,12 +1159,7 @@ textarea {
   .clients__list {
     width: 170px;
     height: 92px;
-    margin: 0;
     justify-content: normal;
-    margin-left: 30px;
-  }
-  .clients__list:first-child {
-    margin-left: 0;
   }
 }
 
@@ -1213,13 +1206,13 @@ textarea {
   .footer__tabblet-warpper {
     display: flex;
     justify-content: space-around;
-    align-items: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__tabblet-warpper {
     margin-right: 93px;
+    align-items: baseline;
   }
 }
 
@@ -1257,7 +1250,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .footer__list {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
   }
 }
@@ -1352,9 +1345,10 @@ textarea {
 
 .portfolio__benefits {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .portfolio__benefits {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1371,7 +1365,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .filter {
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1448,7 +1442,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .exemple__wrapper {
     flex-wrap: wrap;
-    margin: 0 -15px;
+    margin: -15px;
   }
 }
 
@@ -1474,19 +1468,10 @@ textarea {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 767px) {
-  .exemple__cards:last-child {
-    margin-bottom: 60px;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .exemple__cards {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
-  }
-  .exemple__cards:last-child {
-    margin-bottom: 60px;
   }
 }
 
@@ -1494,12 +1479,6 @@ textarea {
   .exemple__cards {
     width: calc((100% - 3 * 30px) / 3);
     margin: 15px;
-  }
-  .exemple__cards:nth-child(-n + 3) {
-    margin-top: 0;
-  }
-  .exemple__cards:nth-child(n + 6) {
-    margin-bottom: 0;
   }
 }
 
@@ -1558,5 +1537,6 @@ textarea {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
+  font-size: 18px;
 }
 /*# sourceMappingURL=main.css.map */

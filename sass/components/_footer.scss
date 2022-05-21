@@ -15,11 +15,12 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    // align-items: center;
   }
 
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
+    align-items: baseline;
   }
 }
 
@@ -55,15 +56,10 @@
 .footer__list {
   @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
   }
 }
-
-// .footer__list.container {
-//   display: flex;
-//   align-items: baseline;
-// }
 
 .footer__socials {
   display: flex;

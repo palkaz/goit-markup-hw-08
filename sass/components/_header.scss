@@ -2,12 +2,11 @@
 
 // размеры шрифта навигация контакты
 .header {
-  padding: 10px 0;
   font-weight: 500;
   letter-spacing: 0.02em;
   position: relative;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     // полоска в хедере
     border-bottom: 1px solid var(--header-line-color);
   }
